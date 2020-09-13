@@ -62,6 +62,7 @@ const FarmCards: React.FC = () => {
     },
     [[]],
   )
+  debugger;
 
   return (
     <StyledCards>
@@ -78,7 +79,7 @@ const FarmCards: React.FC = () => {
         ))
       ) : (
         <StyledLoadingWrapper>
-          <Loader text="Cooking the rice ..." />
+          <Loader text="Firing the rockets ..." />
         </StyledLoadingWrapper>
       )}
     </StyledCards>
@@ -125,7 +126,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
   }, [sushi, lpTokenAddress, account, setHarvestable])
 
   const poolActive = true // startTime * 1000 - Date.now() <= 0
-
+  debugger;
   return (
     <StyledCardWrapper>
       {farm.tokenSymbol === 'BOOST' && <StyledCardAccent />}

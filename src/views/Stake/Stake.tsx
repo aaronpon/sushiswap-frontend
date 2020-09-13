@@ -57,7 +57,9 @@ const Farm: React.FC = () => {
             subtitle="0.05% of all BoostedSwap trades are rewarded to Boost stakers"
           />
           {/* <FarmCards /> */}
-          <div>TBD</div>
+          <StyledText>
+          <div>Coming real soon</div>
+          </StyledText>
         </>
       ) : (
         <div
@@ -77,6 +79,16 @@ const Farm: React.FC = () => {
     </Page>
   )
 }
+
+const StyledText = styled.div`
+  align-items: center;
+  color: ${props => props.theme.color.white};
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  height: 44px;
+  justify-content: flex-end;
+`
 
 const StyledFarm = styled.div`
   align-items: center;

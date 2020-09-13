@@ -1,13 +1,6 @@
 {
-  "short_name": "SushiSwap",
-  "name": "Farm SUSHI with Uniswap LP Tokens",
-  "icons": [
-    {
-      "src": "favicon.png",
-      "type": "image/png",
-      "sizes": "240x240"
-    }
-  ],
+  "short_name": "BoostedSwap",
+  "name": "Farm BOOSTED with Uniswap LP Tokens",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
