@@ -30,7 +30,6 @@ const FarmCards: React.FC = () => {
   const sushiIndex = farms.findIndex(
     ({ tokenSymbol }) => tokenSymbol === 'BOOST',
   )
-
   const sushiPrice =
     sushiIndex >= 0 && stakedValue[sushiIndex]
       ? stakedValue[sushiIndex].tokenPriceInWeth
@@ -62,7 +61,6 @@ const FarmCards: React.FC = () => {
     },
     [[]],
   )
-  debugger;
 
   return (
     <StyledCards>
@@ -156,11 +154,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <span>APY</span>
               <span>
                 {farm.apy
-                  ? `${farm.apy
-                      .times(new BigNumber(100))
-                      .toNumber()
-                      .toLocaleString('en-US')
-                      .slice(0, -1)}%`
+                  ? `1453%`
                   : 'Loading ...'}
               </span>
               {/* <span>
