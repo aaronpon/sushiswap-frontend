@@ -28,7 +28,7 @@ const FarmCards: React.FC = () => {
   const stakedValue = useAllStakedValue()
 
   const sushiIndex = farms.findIndex(
-    ({ tokenSymbol }) => tokenSymbol === 'SUSHI',
+    ({ tokenSymbol }) => tokenSymbol === 'BOOST',
   )
 
   const sushiPrice =
@@ -128,7 +128,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.tokenSymbol === 'SUSHI' && <StyledCardAccent />}
+      {farm.tokenSymbol === 'BOOST' && <StyledCardAccent />}
       <Card>
         <CardContent>
           <StyledContent>
