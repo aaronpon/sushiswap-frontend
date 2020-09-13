@@ -41,7 +41,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
 }
 
 const StyledBackdrop = styled.div`
-  background-color: ${(props) => props.theme.color.grey[600]}aa;
+  background-color: ${(props) => props.theme.color.white}aa;
   position: absolute;
   top: 0;
   right: 0;
@@ -85,7 +85,7 @@ const StyledMobileMenu = styled.div`
 
 const StyledLink = styled(NavLink)`
   box-sizing: border-box;
-  color: ${(props) => props.theme.color.grey[400]};
+  color: ${(props) => props.theme.color.grey[500]};
   font-size: 24px;
   font-weight: 700;
   padding: ${(props) => props.theme.spacing[3]}px
@@ -94,7 +94,7 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   width: 100%;
   &:hover {
-    color: ${(props) => props.theme.color.grey[500]};
+    color: ${(props) => props.theme.color.white};
   }
   &.active {
     color: ${(props) => props.theme.color.primary.main};
